@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <EditText
+        android:id="@+id/text_product_name"
+        android:layout_width="299dp"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="Enter product/drug name "
+        android:inputType="textPersonName"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/text_company_name"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="company name"
+        android:inputType="textPersonName"
+        app:layout_constraintEnd_toEndOf="@+id/text_product_name"
+        app:layout_constraintStart_toStartOf="@+id/text_product_name"
+        app:layout_constraintTop_toBottomOf="@+id/text_product_name" />
+
+    <EditText
+        android:id="@+id/txt_date_manu"
+        android:layout_width="96dp"
+        android:layout_height="40dp"
+        android:layout_marginEnd="52dp"
+        android:ems="10"
+        android:hint="date manu"
+        android:inputType="textPersonName"
+        app:layout_constraintEnd_toStartOf="@+id/txt_date_exp"
+        app:layout_constraintTop_toBottomOf="@+id/text_company_name" />
+
+    <EditText
+        android:id="@+id/txt_date_exp"
+        android:layout_width="96dp"
+        android:layout_height="40dp"
+        android:layout_marginEnd="16dp"
+        android:ems="10"
+        android:hint="date exp"
+        android:inputType="textPersonName"
+        app:layout_constraintEnd_toEndOf="@+id/text_company_name"
+        app:layout_constraintTop_toBottomOf="@+id/text_company_name" />
+
+    <EditText
+        android:id="@+id/txt_company_number"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:ems="10"
+        android:hint="company phone number"
+        android:inputType="textPersonName"
+        app:layout_constraintEnd_toEndOf="@+id/text_company_name"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/text_company_name"
+        app:layout_constraintTop_toBottomOf="@+id/txt_date_manu" />
+
+    <EditText
+        android:id="@+id/text_com_emai_add"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        android:ems="10"
+        android:hint="company Email address"
+        android:inputType="textPersonName"
+        app:layout_constraintEnd_toEndOf="@+id/txt_company_number"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/txt_company_number"
+        app:layout_constraintTop_toBottomOf="@+id/txt_company_number" />
+
+    <EditText
+        android:id="@+id/tex_com_web_link"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="campany website link"
+        android:inputType="textPersonName"
+        app:layout_constraintEnd_toEndOf="@+id/text_com_emai_add"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/text_com_emai_add"
+        app:layout_constraintTop_toBottomOf="@+id/text_com_emai_add" />
+
+    <Button
+        android:id="@+id/createbtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="CREATE QR CODE"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.346"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tex_com_web_link" />
+
+    <Button
+        android:id="@+id/btn_save"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="save"
+        android:text="save"
+        app:layout_constraintEnd_toEndOf="@+id/tex_com_web_link"
+        app:layout_constraintHorizontal_bias="0.8"
+        app:layout_constraintStart_toEndOf="@+id/createbtn"
+        app:layout_constraintTop_toBottomOf="@+id/tex_com_web_link" />
+
+    <ImageView
+        android:id="@+id/qrcode"
+        android:layout_width="299dp"
+        android:layout_height="198dp"
+        android:layout_marginBottom="24dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/createbtn"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <TextView
+        android:id="@+id/testDate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="36dp"
+        android:layout_marginTop="12dp"
+        android:text="TextView"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/createbtn" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "673769679205",
+    "firebase_url": "https://ridwan-c228e.firebaseio.com",
+    "project_id": "ridwan-c228e",
+    "storage_bucket": "ridwan-c228e.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:673769679205:android:e234a277dec0484ada598c",
+        "android_client_info": {
+          "package_name": "edu.socialmedia.ridwan"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "673769679205-j069p3g2s38f7li841q7anc6jsbiaol1.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "edu.socialmedia.ridwan",
+            "certificate_hash": "ec250028092fb4cda65afd87e7d3e93257d3f568"
+          }
+        },
+        {
+          "client_id": "673769679205-n7tja7r9cpiogs9hk78ba99rksocv62l.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDGsO2_l0xEUbSdqycAP2_CJZJXeylXWA4"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "673769679205-n7tja7r9cpiogs9hk78ba99rksocv62l.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
