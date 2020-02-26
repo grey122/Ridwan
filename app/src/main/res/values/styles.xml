@@ -8,4 +8,55 @@
         <item name="colorAccent">@color/colorAccent</item>
     </style>
 
+
+    <style name="cl_parent_text_style">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginTop">3dp</item>
+        <item name="android:fontFamily">@font/bitter</item>
+    </style>
+
+
+    <style name="cl_name_text_style" parent="cl_parent_text_style">
+        <item name="android:textSize">18dp</item>
+        <item name="android:textColor">@color/cl_name_text_color</item>
+    </style>
+
+    <style name="cl_number_text_style" parent="cl_parent_text_style">
+        <item name="android:textSize">14dp</item>
+        <item name="android:textColor">@color/cl_number_text_color</item>
+    </style>
+
+
+    <style name="cl_address_text_style" parent="cl_parent_text_style">
+        <item name="android:textSize">13dp</item>
+        <item name="android:textColor">@color/cl_address_text_color</item>
+    </style>
+
+    <style name="cl_mail_text_style" parent="cl_number_text_style">
+        <item name="android:textSize">13dp</item>
+    </style>
+
+    <style name="cl_divider_line">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">1dp</item>
+        <item name="android:background">@color/dividerLineColor</item>
+     </style>
+    <style name="manu_date" parent="cl_parent_text_style">
+        <item name="android:background">@drawable/rounded_bg</item>
+         <item name="android:padding">6dp</item>
+
+        <item name="android:color">@color/manu_txt_date</item>
+
+
+
+
+    </style>
+    <style name="exp_date" parent="cl_parent_text_style">
+    <item name="android:background">@drawable/rounded_bg_exp</item>
+    <item name="android:padding">6dp</item>
+
+    <item name="android:color">@color/exp_txt_date</item>
+    </style>
+
 </resources>

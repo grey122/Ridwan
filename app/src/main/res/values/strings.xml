@@ -1,4 +1,14 @@
 <resources>
     <string name="app_name">Food and drugs</string>
     <string name="please_focus_on_qr_code">please focus on qr code</string>
+
+    <string name="product_reminder_notification_title_template">Product reminder: %1$s</string>
+
+    <!-- TODO: remove this placeholder text -->
+    <string name="product_reminder_notification_placeholder_text_template">You said %1$s and lorem
+        ipsum dolor sit amet, consectetur adipiscing elit. Etiam non enim magna. Morbi dictum, velit
+
+    </string>
+    <string name="notification">notification</string>
+    <string name="delete_deal">delete deal</string>
 </resources>

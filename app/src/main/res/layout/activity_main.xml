@@ -64,50 +64,38 @@
         app:layout_constraintTop_toBottomOf="@+id/txt_date_manu" />
 
     <EditText
-        android:id="@+id/text_com_emai_add"
+        android:id="@+id/edtWebsite"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:layout_marginTop="4dp"
-        android:ems="10"
-        android:hint="company Email address"
-        android:inputType="textPersonName"
-        app:layout_constraintEnd_toEndOf="@+id/txt_company_number"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="@+id/txt_company_number"
-        app:layout_constraintTop_toBottomOf="@+id/txt_company_number" />
-
-    <EditText
-        android:id="@+id/tex_com_web_link"
-        android:layout_width="0dp"
-        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
         android:ems="10"
         android:hint="campany website link"
         android:inputType="textPersonName"
-        app:layout_constraintEnd_toEndOf="@+id/text_com_emai_add"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="@+id/text_com_emai_add"
-        app:layout_constraintTop_toBottomOf="@+id/text_com_emai_add" />
+        app:layout_constraintEnd_toEndOf="@+id/txt_company_number"
+        app:layout_constraintStart_toStartOf="@+id/txt_company_number"
+        app:layout_constraintTop_toBottomOf="@+id/txt_company_number" />
 
     <Button
         android:id="@+id/createbtn"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:onClick="qrCodeGenerator"
         android:text="CREATE QR CODE"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.346"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/tex_com_web_link" />
+        app:layout_constraintTop_toBottomOf="@+id/edtWebsite" />
 
     <Button
         android:id="@+id/btn_save"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:onClick="save"
+
         android:text="save"
-        app:layout_constraintEnd_toEndOf="@+id/tex_com_web_link"
+        app:layout_constraintEnd_toEndOf="@+id/edtWebsite"
         app:layout_constraintHorizontal_bias="0.8"
         app:layout_constraintStart_toEndOf="@+id/createbtn"
-        app:layout_constraintTop_toBottomOf="@+id/tex_com_web_link" />
+        app:layout_constraintTop_toBottomOf="@+id/edtWebsite" />
 
     <ImageView
         android:id="@+id/qrcode"
@@ -120,13 +108,13 @@
         app:layout_constraintTop_toBottomOf="@+id/createbtn"
         app:layout_constraintVertical_bias="1.0" />
 
-    <TextView
-        android:id="@+id/testDate"
+    <Button
+        android:id="@+id/createNew"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="36dp"
-        android:layout_marginTop="12dp"
-        android:text="TextView"
+        android:layout_marginStart="8dp"
+        android:onClick="clean"
+        android:text="NEW"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/createbtn" />
 

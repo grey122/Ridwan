@@ -1,0 +1,122 @@
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="4dp">
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cvProfile"
+        android:layout_width="110dp"
+        android:layout_height="110dp"
+        app:cardCornerRadius="4dp"
+        app:cardElevation="6dp"
+        app:cardUseCompatPadding="true"
+        android:layout_marginTop="12dp"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="MissingConstraints">
+
+        <ImageView
+            android:id="@+id/ivThumb"
+            android:padding="20dp"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:src="@drawable/ic_profile"
+            android:scaleType="centerCrop" />
+
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cvDetails"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="8dp"
+        android:minHeight="120dp"
+        app:cardCornerRadius="4dp"
+        app:cardElevation="4dp"
+        app:cardUseCompatPadding="true"
+        tools:ignore="MissingConstraints">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:paddingLeft="100dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="4dp">
+
+                <TextView
+                    android:id="@+id/tvName"
+                    style="@style/cl_name_text_style"
+                    android:text="company name"
+                    app:layout_constraintStart_toStartOf="parent"
+                    tools:layout_editor_absoluteY="0dp" />
+
+                <TextView
+                    android:id="@+id/tvPCName"
+                    style="@style/cl_mail_text_style"
+                    android:text="company name" />
+
+                <TextView
+                    android:id="@+id/tvMobileNumber"
+                    style="@style/cl_number_text_style"
+                    android:text="number" />
+
+                <TextView
+                    android:id="@+id/tvwebsite"
+                    style="@style/cl_address_text_style"
+                    android:text="website" />
+
+
+                <View style="@style/cl_divider_line" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="30dp"
+                    android:layout_marginTop="4dp"
+                    android:background="@android:color/transparent"
+                    android:orientation="horizontal"
+                    android:weightSum="4"
+
+                    >
+
+                    <TextView
+                        android:id="@+id/tv_manu_date"
+                        style="@style/manu_date"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:text="manufacterdate"
+                        android:textColor="@color/manu_txt_date"
+
+
+                        />
+
+                    <TextView
+                        android:id="@+id/spacebar"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+
+                        android:text="         " />
+
+                    <TextView
+                        style="@style/exp_date"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:text="expiring_date"
+                        android:textColor="@color/exp_txt_date"
+                        android:id="@+id/tv_expiration_date"/>
+
+
+
+
+                </LinearLayout>
+
+            </LinearLayout>
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </androidx.cardview.widget.CardView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
